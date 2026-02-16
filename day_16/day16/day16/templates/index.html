@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Home Page</h2>
+    <p>Welcome to the home page!</p>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    <p>Here is some additional content specific to the home page.</p>
+
+    
+
+{% endblock %}

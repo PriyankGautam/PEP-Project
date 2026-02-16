@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ascii-art-priyankg"
+version = "0.0.2"
+description = "A Python ASCII art package with colors (cat, panda, smiley)"
+readme = "README.md"
+authors = [
+    {name = "Priyank Gautam", email = "priyankgautam99999@gmail.com"}
+]
+license = {text = "MIT"}
+dependencies = ["colorama"]
+
+[project.urls]
+Homepage = "https://test.pypi.org/"

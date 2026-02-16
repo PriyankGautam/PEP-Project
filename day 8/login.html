@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #020617;
+  font-family: Poppins, sans-serif;
+}
+
+.box {
+  background: rgba(15, 23, 42, 0.95);
+  padding: 30px;
+  width: 320px;
+  border-radius: 12px;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>Login</h2>
+  <input type="text" placeholder="Username" id="user">
+  <input type="password" placeholder="Password" id="pass">
+  <button onclick="login()">Login</button>
+  <a href="signup.html">Create an account</a>
+</div>
+
+<script>
+function login() {
+  let u = document.getElementById("user").value;
+  let p = document.getElementById("pass").value;
+
+  if (u === "admin" && p === "1234") {
+    alert("Login Successful!");
+    window.location.href = "index.html";
+  } else {
+    alert("Invalid Login!");
+  }
+}
+</script>
+
+</body>
+</html>
+

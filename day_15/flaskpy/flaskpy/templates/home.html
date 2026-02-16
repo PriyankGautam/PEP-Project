@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Home - TrackRush{% endblock %}
+
+{% block content %}
+
+<div class="container text-center my-5">
+    <h1 class="display-4">Welcome to TrackRush Racing</h1>
+    <p class="lead">Feel the speed. Experience the thrill.</p>
+    <a href="/login" class="btn btn-danger">Join Now</a>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Cars</h2>
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrari</h5>
+                    <p class="card-text">Top speed: 350 km/h</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Lamborghini</h5>
+                    <p class="card-text">Top speed: 340 km/h</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">McLaren</h5>
+                    <p class="card-text">Top speed: 400 km/h</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center p-3">
+    © 2026 TrackRush Racing
+</footer>
+
+{% endblock %}
