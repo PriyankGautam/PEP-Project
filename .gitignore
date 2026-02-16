@@ -73,3 +73,6 @@ package-lock.json
 *.tmp
 *.temp
 tempCodeRunnerFile.py
+
+# Sensitive API tokens and credentials
+pypi.txt
